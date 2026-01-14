@@ -74,7 +74,7 @@ Default thresholds are arbitrary. Explicitly pricing errors unlocks substantial 
 
 ---
 
-## 🕵️‍♂️ Explainability: Human-in-the-Loop Trust
+## 🕵️‍♂️ Explainability: Why Transactions Are Flagged
 
 Fraud models cannot operate as black boxes.
 
@@ -86,5 +86,24 @@ This enables fraud analysts to **validate, override, or defend decisions**, supp
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Structure:
+
+notebooks/
+- data_understanding.ipynb  
+  Sanity checks, fraud ratio validation, and feature context
+
+- baseline_analysis.ipynb  
+  Establishes the “do nothing” financial cost floor
+
+- model_pipeline.ipynb  
+  Leakage-safe ML pipeline with PR-AUC evaluation
+
+- cost_optimization.ipynb  
+  Threshold sweep to minimize total expected financial loss
+
+- explainability.ipynb  
+  SHAP-based global and local explanations for analyst review
+
+decision_framework.md  
+Plain-English documentation of business assumptions and cost logic
 
